@@ -5,29 +5,33 @@ import style from "../components/style/textanimation.module.css";
 export default function Textanimation() {
   useEffect(() => {
     gsap.from("#box", {
+      opacity: 0,
       y: 30,
       duration: 1,
       delay: 0,
       stagger: 0.1,
     });
     gsap.from("#box1", {
-        y: 30,
-        duration: 1,
-        delay: 0,
-        stagger: -0.1,
-      });
-      gsap.from("#upptext", {
-        opacity:0,
-        y: 50,
-        duration: 1,
-        delay: 0,
-        
-      });
+      opacity: 0,
+      y: 30,
+      duration: 1,
+      delay: 0,
+      stagger: -0.1,
+    });
+    gsap.from("#upptext", {
+      opacity: 0,
+      y: 50,
+      duration: 1,
+      delay: 0,
+    });
   }, []);
 
   return (
     <div className={style.textanimation_main}>
-      <div id="upptext" className={style.uppertext}> Payments designed for </div>
+      <div id="upptext" className={style.uppertext}>
+        {" "}
+        Payments designed for{" "}
+      </div>
       <div className={style.textanimation}>
         <div className={style.global}>
           <div id="box" className={style.box}>

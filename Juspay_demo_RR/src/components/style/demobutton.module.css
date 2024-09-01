@@ -1,0 +1,22 @@
+.mainbtn{
+    width: 30%;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.mainbtn button{
+    width: 60%;
+    height: 10vh;
+    font-family: "Plus Jakarta Sans";
+    font-size: 3vh;
+    font-weight: 600;
+    border: none;
+    background-color: #212121;
+    color: #FFFFFF;
+    border-radius: 86px;
+    border: 0.5px solid;
+    border-image-source: radial-gradient(67.28% 402.79% at 19.38% -80.1%, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%) 
+    
+}
