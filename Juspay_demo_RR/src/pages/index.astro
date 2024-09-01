@@ -23,13 +23,17 @@ import Schduledemobutton from "../components/Schduledemobutton";
     <style>
       body {
         background-color: #121316;
+        overflow-y: scroll;
         width: 100%;
-        height: 120vh;
+        height: 100vh;
         font-family: "Plus Jakarta Sans", sans-serif;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+      }
+      body::-webkit-scrollbar {
+        display: none;
       }
       svg {
         position: absolute;

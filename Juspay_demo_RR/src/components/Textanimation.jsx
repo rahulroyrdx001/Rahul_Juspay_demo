@@ -12,7 +12,7 @@ export default function Textanimation() {
       stagger: 0.1,
     });
     gsap.from("#box1", {
-      opacity: 0,
+      
       y: 30,
       duration: 1,
       delay: 0,
@@ -90,31 +90,31 @@ export default function Textanimation() {
             <div>R</div>
             <div>T</div>
           </div>
-          <div id="box1" className={style.box}>
+          <div id="box1" className={style.box1}>
             <div>¥</div>
             <div>£</div>
             <div>₣</div>
             <div>C</div>
           </div>
-          <div id="box1" className={style.box}>
+          <div id="box1" className={style.box1}>
             <div>¥</div>
             <div>R</div>
             <div>₹</div>
             <div>O</div>
           </div>
-          <div id="box1" className={style.box}>
+          <div id="box1" className={style.box1}>
             <div>₹</div>
             <div>₹</div>
             <div>R</div>
             <div>M</div>
           </div>
-          <div id="box1" className={style.box}>
+          <div id="box1" className={style.box1}>
             <div>¥</div>
             <div>£</div>
             <div>₣</div>
             <div>E</div>
           </div>
-          <div id="box1" className={style.box}>
+          <div id="box1" className={style.box1}>
             <div>¥</div>
             <div>R</div>
             <div>₹</div>

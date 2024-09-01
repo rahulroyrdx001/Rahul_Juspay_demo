@@ -1,10 +1,8 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import gsap from "gsap";
 import style from "./style/nav.module.css";
 
 export default function Navbar() {
-
-
   useEffect(() => {
     gsap.from("#logo", {
       opacity: 0,
@@ -14,6 +12,13 @@ export default function Navbar() {
       delay: 0,
     });
     gsap.from(".lmenu", {
+      opacity: 0,
+      y: 20,
+      duration: 0.7,
+      delay: 0,
+      stagger: 0.3,
+    });
+    gsap.from(".rmenu", {
       opacity: 0,
       y: 20,
       duration: 0.7,
@@ -107,7 +112,7 @@ export default function Navbar() {
           </div>
         </div>
         <div className={style.menuright}>
-          <div className="lmenu">
+          <div id={style.globcontainer} >
             <svg
               className={style.globimg}
               width="53"
@@ -133,7 +138,7 @@ export default function Navbar() {
             <div className={style.insideglob}>
               <div className={style.globtopmenu}>REGION</div>
               <div className={style.globbottommenu}>
-                <div className={style.globreg}>
+                <div id="glob" className={style.globreg}>
                   <img
                     src="https://juspay.io/global/flags/region/sea.svg"
                     alt="Southeast Asia map"
@@ -171,7 +176,7 @@ export default function Navbar() {
               </div>
             </div>
           </div>
-          <div className="lmenu" style={{ color: "#0099FF" }}>
+          <div className="rmenu" style={{ color: "#0099FF" }}>
             Contact us
           </div>
         </div>

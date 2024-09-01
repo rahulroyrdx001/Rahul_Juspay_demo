@@ -4,14 +4,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transform: translate(0,-45%);
     
 }
 .mainbtn button{
     width: 60%;
     height: 10vh;
     font-family: "Plus Jakarta Sans";
-    font-size: 3vh;
-    font-weight: 600;
+    font-size: 1.1rem;
+    font-weight: 400;
     border: none;
     background-color: #212121;
     color: #FFFFFF;
