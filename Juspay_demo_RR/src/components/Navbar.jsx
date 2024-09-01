@@ -3,22 +3,7 @@ import gsap from "gsap";
 import style from "./style/nav.module.css";
 
 export default function Navbar() {
-  // function split_text() {
-  //   var h4 = document.querySelector("h4");
-  //   var h4text = h4.textContent;
-  //   var split_text = h4text.split("");
-  //   var halfvalue = split_text.length / 2;
 
-  //   var clutter = "";
-  //   split_text.forEach((e, idx) => {
-  //     if (idx < halfvalue) {
-  //       clutter += `<span classname="a">${e}</span>`;
-  //     } else {
-  //       clutter += `<span classname="b">${e}</span>`;
-  //     }
-  //   });
-  //   h4.innerHTML = clutter;
-  // }
 
   useEffect(() => {
     gsap.from("#logo", {
