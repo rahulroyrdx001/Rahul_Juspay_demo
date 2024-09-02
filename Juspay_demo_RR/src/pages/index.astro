@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import Textanimation from "../components/Textanimation";
 import Ptext from "../components/Ptext";
 import Schduledemobutton from "../components/Schduledemobutton";
+import Companylist from "../components/Companylist";
 ---
 
 <html lang="en">
@@ -25,7 +26,7 @@ import Schduledemobutton from "../components/Schduledemobutton";
         background-color: #121316;
         overflow-y: scroll;
         width: 100%;
-        height: 100vh;
+        height: 220vh;
         font-family: "Plus Jakarta Sans", sans-serif;
         display: flex;
         flex-direction: column;
@@ -4004,5 +4005,6 @@ import Schduledemobutton from "../components/Schduledemobutton";
     <Textanimation client:load />
     <Ptext client:load />
     <Schduledemobutton client:load />
+    <Companylist client:visible />
   </body>
 </html>

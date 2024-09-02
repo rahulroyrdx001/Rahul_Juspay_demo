@@ -1,0 +1,53 @@
+.companymain{
+    margin: 0;
+    padding: 0;
+    width:100%;
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: #17191B
+}
+.marquee_container {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.marquee{
+    width: 90%;
+    height: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+}
+.marquee img{
+    width: 9rem;
+    padding: 2% 2%;
+    display: inline-block;
+    white-space:nowrap;
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+  }
+  
+.videoelement{
+    width: 100%;
+    height: 80%;
+    background: #17191B;
+    object-fit: cover;
+    
+}
+
