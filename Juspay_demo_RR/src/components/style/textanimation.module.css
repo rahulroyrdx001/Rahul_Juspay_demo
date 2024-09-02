@@ -73,3 +73,80 @@
     color: #0099FF;
 }
 
+@media (min-width: 320px) and (max-width: 480px){
+    .textanimation_main{
+        width:80%;
+        height: 30vh;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        transform: translate(0,0%);
+        
+    }
+    .uppertext{
+        width: 100%;
+        height: 45%;
+        color: #F5F5F5;
+        font-weight: 600;
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 5;
+        
+    }
+    .textanimation{
+        width: 100%;
+        height: 17%;
+        font-weight: 500;
+        font-size: 1.5rem;
+        /* background-color:red ; */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        overflow-y: hidden;
+        transform: translate(0%,-255%);
+        
+        
+    
+    }
+    .global{
+        width: 30%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 5;
+        transform: translate(12%,0);
+        
+        
+    }
+    .outcome{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 5;
+        transform: translate(-12%,0);
+    }
+    
+    .box{
+        margin: 0;
+        padding : 0;
+        width: 20%;
+        height: 20vh; 
+        font-weight: 700;
+        transform: translate(0px,-28%); 
+        color: #0099FF;
+        
+        
+    }
+    .box1{
+        width: 20%;
+        height: 20vh; 
+        font-weight: 700;
+        transform: translate(0px,-28%); 
+        color: #0099FF;
+    }
+}

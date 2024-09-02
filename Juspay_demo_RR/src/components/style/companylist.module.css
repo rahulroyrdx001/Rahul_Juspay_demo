@@ -15,6 +15,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
     
 }
 .marquee{
@@ -24,11 +25,11 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    overflow: hidden;
+    
 }
 .marquee img{
     width: 9rem;
-    padding: 2% 2%;
+    padding: 2% 1%;
     display: inline-block;
     white-space:nowrap;
     animation: animate 5s linear infinite;
