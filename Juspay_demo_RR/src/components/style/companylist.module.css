@@ -11,6 +11,9 @@
     background: #17191B
     
 }
+.companymain::-webkit-scrollbar{
+    display: none;
+  }
 .marquee_container {
     width: 100%;
     height: 20%;
