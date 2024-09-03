@@ -3,12 +3,12 @@ import gsap from "gsap";
 import style from "../components/style/textanimation.module.css";
 
 export default function Textanimation() {
-  var main = document.querySelector("#main")
-  var cursor = document.querySelector("#cursor")
+  // var main = document.querySelector("#main")
+  // var cursor = document.querySelector("#cursor")
 
-  main.addEventListener("mousemove",(dets)=>{
-    
-  })
+  // main.addEventListener("mousemove",(dets)=>{
+
+  // })
 
   useEffect(() => {
     gsap.from("#box", {
