@@ -3,6 +3,13 @@ import gsap from "gsap";
 import style from "../components/style/textanimation.module.css";
 
 export default function Textanimation() {
+  var main = document.querySelector("#main")
+  var cursor = document.querySelector("#cursor")
+
+  main.addEventListener("mousemove",(dets)=>{
+    
+  })
+
   useEffect(() => {
     gsap.from("#box", {
       opacity: 0,
@@ -12,7 +19,6 @@ export default function Textanimation() {
       stagger: 0.1,
     });
     gsap.from("#box1", {
-      
       y: 30,
       duration: 1,
       delay: 0,
@@ -27,7 +33,8 @@ export default function Textanimation() {
   }, []);
 
   return (
-    <div className={style.textanimation_main}>
+    <div id="main" className={style.textanimation_main}>
+      <div id="cursor" className={style.cursor}></div>
       <div id="upptext" className={style.uppertext}>
         {" "}
         Payments designed for{" "}
