@@ -3,16 +3,29 @@ import gsap from "gsap";
 import style from "../components/style/textanimation.module.css";
 
 export default function Textanimation() {
-  // var main = document.querySelector("#main")
-  // var cursor = document.querySelector("#cursor")
-
-  // main.addEventListener("mousemove",(dets)=>{
-
-  // })
-
   useEffect(() => {
+    var main = document.querySelector("#main");
+    var cursor = document.querySelector("#cursor");
+
+    main.addEventListener("mousemove", (dets) => {
+      gsap.to(cursor, {
+        x: dets.clientX - 760,
+        y: dets.clientY - 80,
+        duration: 1,
+        
+      });
+    });
+    main.addEventListener("mouseenter", (dets) => {
+      gsap.to(cursor, {
+        scale:1.5,
+      });
+    });
+    main.addEventListener("mouseleave", (dets) => {
+      gsap.to(cursor, {
+        scale:0,
+      });
+    });
     gsap.from("#box", {
-      opacity: 0,
       y: 30,
       duration: 1,
       delay: 0,
@@ -34,7 +47,8 @@ export default function Textanimation() {
 
   return (
     <div id="main" className={style.textanimation_main}>
-      <div id="cursor" className={style.cursor}></div>
+      <div id="cursor" className={style.cursor}>
+      <img src="https://juspay.io/global/general-hover.svg" alt="hover-img"/></div>
       <div id="upptext" className={style.uppertext}>
         {" "}
         Payments designed for{" "}
